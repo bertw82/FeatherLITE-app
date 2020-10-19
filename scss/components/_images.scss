@@ -1,0 +1,10 @@
+img[src*="feather"] {
+  width: ems(35);
+  padding-right: ems(5);
+  padding-top: ems(3);
+  fill: $white;
+}
+
+svg {
+  padding-left: ems(5);
+}
