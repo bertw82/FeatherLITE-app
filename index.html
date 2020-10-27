@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FeatherLITE App</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
   <header>
@@ -19,7 +20,10 @@
     <div class="search-flex">
       <div>
         <h1>Feather<span class="lite">Lite</span></h1>
-        <input id="feather-search" name="search" type="search" placeholder="Search...">
+        <form>
+          <input id="feather-search" name="search" type="search" placeholder="Search...">
+          <button type="submit"><i class='fas fa-arrow-right' style='font-size:20px; color: whitesmoke'></i></button>
+        </form>
         <label for="feather-search">Search through your notes</label>
       </div>
       <div class="note-flex">
