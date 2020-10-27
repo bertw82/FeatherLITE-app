@@ -5,16 +5,23 @@ form {
 
 input {
   padding: ems(10);
-  border: 1px solid $primary-color;
+  border: 1px solid rgba(0,0,0,.5);
   border-radius: ems(5) 0 0 ems(5);
-  margin-right: 0;
   flex-grow: 1;
 }
 
-button {
+button[type="submit"] {
   background-color: $primary-color;
   border-radius: 0 ems(5) ems(5) 0;
-  margin-left: 0;
-  height: ems(40);
+  height: ems(41);
   width: ems(50);
+}
+
+button {
+  border: none;
+}
+
+label {
+  font-size: .8rem;
+  padding-top: ems(5);
 }

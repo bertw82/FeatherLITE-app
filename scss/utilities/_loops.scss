@@ -1,0 +1,11 @@
+@for $i from 1 through 3 {
+  .date-#{$i} {
+    background-color: adjust-hue(magenta, $i * 20);
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: ems(10);
+    margin-top: ems(16);      
+  }
+}

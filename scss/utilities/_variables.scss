@@ -4,3 +4,6 @@ $background-color: whitesmoke;
 $primary-color: grey;
 $white: #fff;
 $text-color: darkslategrey;
+$primary-light: lighten($primary-color, 35%);
+$text-dark: darken($text-color, 15%);
+$random-color: rgb(random(255), random(255), random(255));
