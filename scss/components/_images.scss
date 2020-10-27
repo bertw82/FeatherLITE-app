@@ -1,14 +1,16 @@
 img[src*="feather"] {
-  width: ems(35);
-  padding-right: ems(5);
+  width: 3em;
+  padding-right: 1em;
   fill: $white;
 }
 
 svg {
   padding-left: ems(5);
+  padding-top: .125em;
 }
 
 img[src*="plus"] {
   width: ems(20);
   fill: $primary-color;
+  background-color: $background-color;
 }
