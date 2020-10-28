@@ -11,24 +11,26 @@
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  background-color: $overlay-bg-dark;
+  padding: 10px;
 }
 
 .overlay a {
-  padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1rem;
   color: #818181;
   display: block;
   transition: 0.3s;
-  background: rgb(32, 54, 54);
+  background: $overlay-bg;
   color: $white;
   padding: 15px 0;
-  margin: 5px;
+  margin: 10px;
+  &:last-child {
+    @include flexb($dir: row, $align:center, $just: center);
+    padding: 11px;
+  }
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -36,19 +38,25 @@
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 60px;
+  font-size: 40px;
+  padding-top: 0;
+  padding-left: 10px;
+  margin: 0 0;
   background-color: rgba(0,0,0, 0);
 }
 
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+.overlay-nav {
+  @include flexb($dir: row, $just: space-between);
+  height: 48px;
+  background-color: $primary-color;
 }
+
+// @media screen and (max-height: 450px) {
+//   .overlay {overflow-y: auto;}
+//   .overlay a {font-size: 20px}
+//   .overlay .closebtn {
+//   font-size: 40px;
+//   top: 15px;
+//   right: 35px;
+//   }
+// }

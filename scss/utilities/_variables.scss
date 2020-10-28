@@ -7,3 +7,5 @@ $text-color: darkslategrey;
 $primary-light: lighten($primary-color, 35%);
 $text-dark: darken($text-color, 15%);
 $random-color: rgb(random(255), random(255), random(255));
+$overlay-bg: rgb(49, 80, 80);
+$overlay-bg-dark: darken($overlay-bg, 10%);

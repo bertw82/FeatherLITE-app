@@ -6,11 +6,17 @@ img[src*="feather"] {
 
 svg {
   padding-left: ems(5);
-  padding-top: .125em;
+  padding-top: 10px;
 }
 
 img[src*="plus"] {
   width: ems(20);
   fill: $primary-color;
   background-color: $background-color;
+}
+
+img[src*="sign-out"] {
+  width: 26px;
+  margin-left: 10px;
+  filter: invert(100%) sepia(18%) saturate(0%) hue-rotate(134deg) brightness(109%) contrast(101%);
 }
