@@ -537,6 +537,10 @@ section {
   padding: 0.3125em 1.5625em;
 }
 
+footer {
+  text-align: center;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -546,7 +550,6 @@ section {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
-  transition: 0.5s;
 }
 
 .overlay-content {
@@ -576,7 +579,7 @@ section {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  background-color: #4e7f7f;
 }
 
 .overlay .closebtn {

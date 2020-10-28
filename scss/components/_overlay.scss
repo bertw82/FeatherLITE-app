@@ -7,7 +7,6 @@
   left: 0;
   background-color: rgba(0,0,0, 0.9);
   overflow-y: hidden;
-  transition: 0.5s;
 }
 
 .overlay-content {
@@ -34,7 +33,7 @@
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  background-color: lighten($overlay-bg, 15%);
 }
 
 .overlay .closebtn {
