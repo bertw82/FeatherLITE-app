@@ -45,18 +45,3 @@
   line-height: .9;
 }
 
-.overlay-nav {
-  @include flexb($dir: row, $just: space-between);
-  height: 48px;
-  background-color: $primary-color;
-}
-
-// @media screen and (max-height: 450px) {
-//   .overlay {overflow-y: auto;}
-//   .overlay a {font-size: 20px}
-//   .overlay .closebtn {
-//   font-size: 40px;
-//   top: 15px;
-//   right: 35px;
-//   }
-// }

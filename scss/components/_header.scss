@@ -1,0 +1,39 @@
+.main-header {
+  background-color: $primary-color;
+  height: 48px;
+  @include flexb($just: space-between);
+  @include mq(med) {
+    display: none;
+  }
+}
+
+.tablet-header {
+  display: none;
+  @include mq(med) {
+    display: initial;
+    @include flexb($align: center);
+    background-color: $primary-color;
+    color: $white;
+    height: 60px;
+    padding-left: 1em;
+    padding-right: 1em;
+    h1 {
+      margin-right: auto;
+    }
+    a {
+      font-size: 1rem;
+      padding: 10px;
+      text-transform: uppercase;
+      &:nth-of-type(2) {
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+        span {
+          color: $primary-light;
+        }
+      }
+    }
+    &-div {
+      @include flexb($align: center);
+    }
+  }
+}

@@ -11,7 +11,21 @@ main {
   border-radius: ems(5);
   box-shadow: 0 3px 2px rgba(0,0,0,.5);
   margin-top: ems(20);
-  padding: ems(10);
+  padding: 7px 10px;
+  @include mq(med) {
+    margin-top: 0;
+  }
+}
+
+.search-flex {
+  @include mq(med) {
+    @include flexb($just: space-between, $align: flex-start);
+    margin-top: 3em;
+    h1 {
+      display: none;
+    }
+  }
+  
 }
 
 .diary {

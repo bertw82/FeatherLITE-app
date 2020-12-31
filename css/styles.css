@@ -473,13 +473,54 @@ p {
   color: #121f1f;
   font-size: 1.4rem;
   font-weight: 600;
+  margin-right: 5px;
 }
 
-header {
+.main-header {
   background-color: grey;
   height: 48px;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .main-header {
+    display: none;
+  }
+}
+
+.tablet-header {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablet-header {
+    display: initial;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    height: 60px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .tablet-header h1 {
+    margin-right: auto;
+  }
+  .tablet-header a {
+    font-size: 1rem;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  .tablet-header a:nth-of-type(2) {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  .tablet-header a:nth-of-type(2) span {
+    color: #d9d9d9;
+  }
+  .tablet-header-div {
+    display: flex;
+    align-items: center;
+  }
 }
 
 i[class="fa fa-bars"] {
@@ -523,7 +564,24 @@ main {
   border-radius: 0.3125em;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   margin-top: 1.25em;
-  padding: 0.625em;
+  padding: 7px 10px;
+}
+@media (min-width: 768px) {
+  .note-flex {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3em;
+  }
+  .search-flex h1 {
+    display: none;
+  }
 }
 
 .diary {
@@ -596,14 +654,6 @@ footer {
   line-height: 0.9;
 }
 
-.overlay-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 48px;
-  background-color: grey;
-}
-
 form {
   display: flex;
   flex-direction: row;
@@ -625,6 +675,7 @@ button[type=submit] {
 
 button {
   border: none;
+  background-color: whitesmoke;
 }
 
 label {

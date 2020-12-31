@@ -1,4 +1,4 @@
-// ----- Flexbox ----- /
+// ----- Flexbox mixin ----- /
 @mixin flexb (
   $disp: flex,
   $dir: null,
@@ -11,3 +11,20 @@
     justify-content: $just;
     align-items: $align;
   }
+
+// Media Queries mixin
+@mixin mq($break) {
+  @if $break == sm {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $break == med {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $break == lg {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+ }
