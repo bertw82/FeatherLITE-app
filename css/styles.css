@@ -482,10 +482,16 @@ header {
   justify-content: space-between;
 }
 
+i[class="fa fa-bars"] {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
 img[src*=feather] {
-  width: 3em;
-  padding-right: 1em;
-  fill: #fff;
+  width: 35px;
+  margin-right: 10px;
 }
 
 svg {
@@ -502,7 +508,6 @@ img[src*=plus] {
 img[src*=sign-out] {
   width: 26px;
   margin-left: 10px;
-  filter: invert(100%) sepia(18%) saturate(0%) hue-rotate(134deg) brightness(109%) contrast(101%);
 }
 
 main {
@@ -583,11 +588,12 @@ footer {
 }
 
 .overlay .closebtn {
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 0;
   padding-left: 10px;
   margin: 0 0;
   background-color: rgba(0, 0, 0, 0);
+  line-height: 0.9;
 }
 
 .overlay-nav {

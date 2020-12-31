@@ -1,7 +1,13 @@
+i[class="fa fa-bars"] {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
 img[src*="feather"] {
-  width: 3em;
-  padding-right: 1em;
-  fill: $white;
+  width: 35px;
+  margin-right: 10px;
 }
 
 svg {
@@ -18,5 +24,4 @@ img[src*="plus"] {
 img[src*="sign-out"] {
   width: 26px;
   margin-left: 10px;
-  filter: invert(100%) sepia(18%) saturate(0%) hue-rotate(134deg) brightness(109%) contrast(101%);
 }

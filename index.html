@@ -6,14 +6,14 @@
   <title>FeatherLITE App</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="js/overlay.js"></script>
 </head>
 <body>
-  <div id="myNav" class="overlay">
+  <div id="overlayNav" class="overlay">
     <div class="overlay-nav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <img src="icons/feather-alt-solid.svg">
+      <a class="closebtn">&times;</a>
+      <img src="icons/feather-alt-solid.svg">
     </div>
     <div class="overlay-content">
       <a href="#">About FeatherLITE</a>
@@ -22,14 +22,9 @@
     </div>
   </div>
   <header>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-    <svg viewBox="0 0 100 80" width="40" height="40" >
-      <rect width="150" height="10" rx="8" fill="whitesmoke"></rect>
-      <rect y="30" width="150" height="10" rx="8" fill="whitesmoke"></rect>
-      <rect y="60" width="150" height="10" rx="8" fill="whitesmoke"></rect>
-    </svg>
-  </span>
-    </div>
+    <span id="menu">
+      <i class="fa fa-bars"></i>
+    </span>
     <img src="icons/feather-alt-solid.svg">
   </header>
   <main>
@@ -76,6 +71,6 @@
   </div>
   </main>
   <footer><p>&copy;Bert Witzel 2020</p></footer>
-
+  <script src="js/app.js"></script>
 </body>
 </html>
