@@ -7,12 +7,12 @@ const modal = document.querySelector('.modal');
 // open and close the navigation on mobile devices
 menu.addEventListener('click', () => {
   overlayNav.style.height = '100%';
-  overlayNav.style.transition = "all .8s"
+  overlayNav.style.transition = "all .8s";
 });
 
 closeBtn.addEventListener('click', () => {
   overlayNav.style.height = '0%';
-  overlayNav.style.transition = "all .5s"
+  overlayNav.style.transition = "all .5s";
 });
 
 // open note modal
@@ -34,13 +34,17 @@ const colorClass = [
   'mod-7', 'mod-8', 'mod-9', 'mod-10', 'mod-11', 'mod-12', 'mod-13', 
   'mod-14', 'mod-15', 'mod-16', 'mod-17', 'mod-18'
 ];
+
+// choose a color and create part of the note
 modalColors.addEventListener('click', (e) => {
   const col = document.getElementsByClassName('col');
   diary.insertBefore(div, initialDiv);
   div.appendChild(section);
+  div.style.display = 'none';
   section.appendChild(span);
   for (let i = 0; i < col.length; i++) {
     if (e.target === col[i]) {
+      col[i].style.boxShadow = "0 0 5px 3px rgba(0,0,0,0.3)";
       span.className = colorClass[i];
     }
   }
@@ -48,6 +52,8 @@ modalColors.addEventListener('click', (e) => {
 const form = document.querySelector('.form-2');
 const title = document.querySelector('#title-input');
 const text = document.querySelector('#text-input');
+
+// use JS to get the current date
 const date = new Date();
 const monthNames = [
   "January", "February", "March", "April", "May", "June", "July",
@@ -60,6 +66,7 @@ const year = date.getFullYear();
 const noteDate = `
   ${month} ${day}, ${year}
 `;
+// build the rest of the note
 const diary = document.querySelector('.diary');
 const initialDiv = diary.firstElementChild;
 const div = document.createElement('div');
@@ -70,9 +77,12 @@ const h2 = document.createElement('h2');
 const h3 = document.createElement('h3');
 const p = document.createElement('p');
 
+// post the note for final product
+const postButton = document.getElementById('postButton');
+
 postButton.addEventListener('click', (e) => {
   e.preventDefault();
-  
+  div.style.display = 'initial';
   section.appendChild(h3);
   div. appendChild(article);
   article.appendChild(h2);

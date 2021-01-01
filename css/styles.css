@@ -625,7 +625,7 @@ ul {
 body {
   background: whitesmoke;
   color: darkslategrey;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -858,7 +858,12 @@ footer {
   background: rgba(0, 0, 0, 0.7);
   left: 0;
   top: 0;
-  padding-top: 75px;
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  .modal {
+    padding-top: 75px;
+  }
 }
 .modal-content {
   background-color: whitesmoke;
@@ -926,7 +931,12 @@ footer {
   margin-top: 0.3125em;
 }
 .form-2 textarea {
-  height: 200px;
+  height: 130px;
+}
+@media (min-width: 768px) {
+  .form-2 textarea {
+    height: 200px;
+  }
 }
 .form-2 button {
   padding: 0.9375em;

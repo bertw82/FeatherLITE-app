@@ -8,7 +8,10 @@
   background: $color-bg-opacity;
   left: 0;
   top: 0;
-  padding-top: 75px;
+  padding-top: 15px;
+  @include mq(med) {
+    padding-top: 75px;
+  }
   &-content { // modal content
     background-color: $background-color;
     width: 90%;

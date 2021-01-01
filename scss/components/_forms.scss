@@ -27,7 +27,10 @@
     }
   }
   textarea {
-    height: 200px;
+    height: 130px;
+    @include mq(med) {
+      height: 200px;
+    }
   }
   button {
     padding: ems(15);
