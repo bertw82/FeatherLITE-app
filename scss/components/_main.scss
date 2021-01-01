@@ -31,18 +31,18 @@ main {
 .diary {
   margin-top: 3em;
   margin-bottom: 3em;
-  & > div {
-    display: flex;
-    flex-direction: row;
+  section {
+    @include flexb($align: center);
+  }
+  article {
+    background: $primary-light;
+    border-radius: ems(5);
+    margin-bottom: 2em;
+    padding: ems(5) ems(25);
   }
 }
 
-section {
-  background: $primary-light;
-  border-radius: ems(5);
-  margin-bottom: 2em;
-  padding: ems(5) ems(25);
-}
+
 
 footer {
   text-align: center;

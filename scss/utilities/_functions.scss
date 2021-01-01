@@ -6,8 +6,7 @@
   .date-#{$i} {
     @include note-color {
       background-color: adjust-hue(magenta, $i * 40);
-      margin-right: ems(10);
-      margin-top: ems(16);  
+      margin: 5px;
     }  
   }
 }
