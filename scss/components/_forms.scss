@@ -1,0 +1,28 @@
+.form-1 {
+ @include flexb;
+ input {
+  @include input-style {
+    border-radius: ems(5) 0 0 ems(5);
+    flex-grow: 1;
+  }
+  @include mq(med) {
+    width: 250px;
+    }
+  }
+  button {
+    background-color: $primary-color;
+    border-radius: 0 ems(5) ems(5) 0;
+    height: ems(51);
+    width: ems(50);
+  }
+}
+
+#modalButton {
+  border: none;
+  background-color: $background-color;
+}
+
+label[for="feather-search"] {
+  font-size: .8rem;
+  padding-top: ems(5);
+}

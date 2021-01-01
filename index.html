@@ -10,6 +10,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
+  <!-- overlay navigation menu -->
   <div id="overlayNav" class="overlay">
     <div class="main-header">
       <a class="closebtn">&times;</a>
@@ -22,6 +23,7 @@
     </div>
   </div>
 
+  <!-- main header -->
   <header>
     <div class="main-header">
       <span id="menu">
@@ -31,21 +33,23 @@
     </div>
   </header>
 
+  <!-- main header for tablet -->
   <div class="tablet-header">
     <img src="icons/feather-alt-solid.svg" alt="feather icon">
     <h1>Feather<span class="lite">Lite</span></h1>
     <div class="tablet-header-div">
-      <a>About</a>
-      <a>Get <span>FeatherPro</span></a>
-      <a><img src="icons/sign-out-alt-solid.svg" alt="sign-out symbol"></a>
+      <a href="#">About</a>
+      <a href="#">Get <span>FeatherPro</span></a>
+      <a href="#"><img src="icons/sign-out-alt-solid.svg" alt="sign-out symbol"></a>
     </div>
   </div>
 
   <main>
+    <!-- search input and "Create a Note" -->
     <div class="search-flex">
       <div>
         <h1>Feather<span class="lite">Lite</span></h1>
-        <form>
+        <form class="form-1">
           <input id="feather-search" name="search" type="search" placeholder="Search...">
           <button type="submit"><i class='fas fa-arrow-right' style='font-size:20px; color: whitesmoke'></i></button>
         </form>
@@ -53,10 +57,46 @@
       </div>
       <div class="note-flex">
         <span class="note">Create a new note</span>
-        <button><img src="icons/plus-solid.svg"></button>
+        <button id="modalButton"><img src="icons/plus-solid.svg"></button>
       </div>
     </div>
 
+    <!-- Create Note modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Create a Note</h2>
+        <h4>Choose a Label</h4>
+        <div class="modal-colors">
+          <div class="mod-1"></div>
+          <div class="mod-2"></div>
+          <div class="mod-3"></div>
+          <div class="mod-4"></div>
+          <div class="mod-5"></div>
+          <div class="mod-6"></div>
+          <div class="mod-7"></div>
+          <div class="mod-8"></div>
+          <div class="mod-9"></div>
+          <div class="mod-10"></div>
+          <div class="mod-11"></div>
+          <div class="mod-12"></div>
+          <div class="mod-13"></div>
+          <div class="mod-14"></div>
+          <div class="mod-15"></div>
+          <div class="mod-16"></div>
+          <div class="mod-17"></div>
+          <div class="mod-18"></div>
+        </div>
+        <form class="form-2">
+          <label for="title-input">Give your note a title</label>
+          <input class="note-input" id="title-input" type="text" name="note-input">
+          <label for="text-input">Write down your note</label>
+          <textarea id="text-input" name="text-input"></textarea>
+          <button type="submit" class="modal-button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- notes -->
     <div class="diary">
       <div>
         <div class="date-1"></div>

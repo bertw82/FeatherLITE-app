@@ -28,3 +28,11 @@
     }
   }
  }
+
+ // input styling
+ @mixin input-style {
+  padding: ems(15);
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: ems(5);
+  @content
+ }

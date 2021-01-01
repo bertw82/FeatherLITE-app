@@ -1,14 +1,4 @@
 .date-1 {
-  background-color: #ff00aa;
-  display: inline-block;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin-right: 0.625em;
-  margin-top: 1em;
-}
-
-.date-2 {
   background-color: #ff0055;
   display: inline-block;
   border-radius: 50%;
@@ -18,14 +8,168 @@
   margin-top: 1em;
 }
 
-.date-3 {
-  background-color: red;
+.date-2 {
+  background-color: #ff5500;
   display: inline-block;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   margin-right: 0.625em;
   margin-top: 1em;
+}
+
+.date-3 {
+  background-color: yellow;
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.625em;
+  margin-top: 1em;
+}
+
+.mod-1 {
+  background-color: #ff00bf;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-2 {
+  background-color: #ff0080;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-3 {
+  background-color: #ff0040;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-4 {
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-5 {
+  background-color: #ff4000;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-6 {
+  background-color: #ff8000;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-7 {
+  background-color: #ffbf00;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-8 {
+  background-color: yellow;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-9 {
+  background-color: #bfff00;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-10 {
+  background-color: #80ff00;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-11 {
+  background-color: #40ff00;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-12 {
+  background-color: lime;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-13 {
+  background-color: #00ff40;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-14 {
+  background-color: #00ff80;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-15 {
+  background-color: #00ffbf;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-16 {
+  background-color: aqua;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-17 {
+  background-color: deepskyblue;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.mod-18 {
+  background-color: #0080ff;
+  display: inline-block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -464,6 +608,14 @@ p {
   font-size: 0.9rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
 .lite {
   text-transform: uppercase;
   font-weight: 900;
@@ -509,6 +661,7 @@ p {
     font-size: 1rem;
     padding: 10px;
     text-transform: uppercase;
+    color: #fff;
   }
   .tablet-header a:nth-of-type(2) {
     border-left: 1px solid #fff;
@@ -564,7 +717,7 @@ main {
   border-radius: 0.3125em;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   margin-top: 1.25em;
-  padding: 7px 10px;
+  padding: 10px 10px;
 }
 @media (min-width: 768px) {
   .note-flex {
@@ -611,7 +764,7 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow-y: hidden;
 }
 
@@ -654,31 +807,84 @@ footer {
   line-height: 0.9;
 }
 
-form {
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  padding-top: 75px;
+}
+.modal-content {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  padding: 1.25em;
+}
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.625rem;
+  margin: 0;
+}
+.modal-content input,
+.modal-content textarea {
+  padding: 0.9375em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.3125em;
+  width: 100%;
+  background: #d9d9d9;
+}
+.modal-content textarea {
+  height: 200px;
+}
+.modal-colors {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  background: #d9d9d9;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  border-radius: 5px;
 }
 
-input {
-  padding: 0.625em;
+.modal-content h4,
+.form-2 label {
+  font-size: 1.3125rem;
+  margin-bottom: 0.3125em;
+  margin-top: 1.25em;
+}
+
+.form-1 {
+  display: flex;
+}
+.form-1 input {
+  padding: 0.9375em;
   border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.3125em;
   border-radius: 0.3125em 0 0 0.3125em;
   flex-grow: 1;
 }
-
-button[type=submit] {
+@media (min-width: 768px) {
+  .form-1 input {
+    width: 250px;
+  }
+}
+.form-1 button {
   background-color: grey;
   border-radius: 0 0.3125em 0.3125em 0;
-  height: 2.5625em;
+  height: 3.1875em;
   width: 3.125em;
 }
 
-button {
+#modalButton {
   border: none;
   background-color: whitesmoke;
 }
 
-label {
+label[for=feather-search] {
   font-size: 0.8rem;
   padding-top: 0.3125em;
 }
