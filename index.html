@@ -65,7 +65,7 @@
     <div class="modal">
       <div class="modal-content">
         <h2>Create a Note</h2>
-        <h4>Choose a Label</h4>
+        <p>Choose a Label</p>
         <div class="modal-colors">
           <div class="mod-1"></div>
           <div class="mod-2"></div>
@@ -87,11 +87,15 @@
           <div class="mod-18"></div>
         </div>
         <form class="form-2">
-          <label for="title-input">Give your note a title</label>
-          <input class="note-input" id="title-input" type="text" name="note-input">
-          <label for="text-input">Write down your note</label>
-          <textarea id="text-input" name="text-input"></textarea>
-          <button type="submit" class="modal-button">Submit</button>
+          <div class="card">
+            <label for="title-input">Give your note a title</label>
+            <input class="note-input" id="title-input" type="text" name="note-input">
+          </div>
+          <div class="card"> 
+            <label for="text-input">Write down your note</label>
+            <textarea id="text-input" name="text-input"></textarea>
+          </div>
+          <button type="submit">Post Note</button>
         </form>
       </div>
     </div>
@@ -124,7 +128,7 @@
       </section>
   </div>
   </main>
-  <footer><p>&copy;Bert Witzel 2020</p></footer>
+  <footer><p>&copy;&nbsp;Bert Witzel 2020</p></footer>
   <script src="js/app.js"></script>
 </body>
 </html>

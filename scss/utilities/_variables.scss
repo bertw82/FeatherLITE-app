@@ -1,12 +1,34 @@
 // Colors
-
-$background-color: whitesmoke;
-$primary-color: grey;
 $white: #fff;
-$text-color: darkslategrey;
+$black: #000;
+
+$primary-color: grey;
 $primary-light: lighten($primary-color, 35%);
+$text-color: darkslategrey;
 $text-dark: darken($text-color, 15%);
-$random-color: rgb(random(255), random(255), random(255));
+$background-color: whitesmoke;
 $color-bg-opacity: rgba(0,0,0, 0.7);
 $overlay-bg: rgb(49, 80, 80);
 $overlay-bg-dark: darken($overlay-bg, 10%);
+
+// note colors
+$mod-colors: (
+  'mod-1': turquoise,
+  'mod-2': seagreen,
+  'mod-3': green,
+  'mod-4': greenyellow,
+  'mod-5': yellow,
+  'mod-6': khaki,
+  'mod-7': orange,
+  'mod-8': red,
+  'mod-9': firebrick,
+  'mod-10': brown,
+  'mod-11': black,
+  'mod-12': $white,
+  'mod-13': rgb(0, 0, 71),
+  'mod-14': navy,
+  'mod-15': blue,
+  'mod-16': purple,
+  'mod-17': magenta,
+  'mod-18': pink
+);

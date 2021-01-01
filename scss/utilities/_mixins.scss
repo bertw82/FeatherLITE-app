@@ -34,5 +34,15 @@
   padding: ems(15);
   border: 1px solid rgba(0,0,0,.5);
   border-radius: ems(5);
-  @content
+  @content;
  }
+
+// note styling 
+@mixin note-color {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $primary-color;
+  width: 15px;
+  height: 15px;
+  @content;
+}

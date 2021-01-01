@@ -1,175 +1,214 @@
 .date-1 {
-  background-color: #ff0055;
   display: inline-block;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  background-color: #ff0055;
   margin-right: 0.625em;
   margin-top: 1em;
 }
 
 .date-2 {
-  background-color: #ff5500;
   display: inline-block;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  background-color: #ff5500;
   margin-right: 0.625em;
   margin-top: 1em;
 }
 
 .date-3 {
-  background-color: yellow;
   display: inline-block;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
   margin-right: 0.625em;
   margin-top: 1em;
 }
 
 .mod-1 {
-  background-color: #ff00bf;
+  background: turquoise;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-2 {
-  background-color: #ff0080;
+  background: seagreen;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-3 {
-  background-color: #ff0040;
+  background: green;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-4 {
-  background-color: red;
+  background: greenyellow;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-5 {
-  background-color: #ff4000;
+  background: yellow;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-6 {
-  background-color: #ff8000;
+  background: khaki;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-7 {
-  background-color: #ffbf00;
+  background: orange;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-8 {
-  background-color: yellow;
+  background: red;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-9 {
-  background-color: #bfff00;
+  background: firebrick;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-10 {
-  background-color: #80ff00;
+  background: brown;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-11 {
-  background-color: #40ff00;
+  background: black;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-12 {
-  background-color: lime;
+  background: #fff;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-13 {
-  background-color: #00ff40;
+  background: #000047;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-14 {
-  background-color: #00ff80;
+  background: navy;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-15 {
-  background-color: #00ffbf;
+  background: blue;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-16 {
-  background-color: aqua;
+  background: purple;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-17 {
-  background-color: deepskyblue;
+  background: magenta;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 .mod-18 {
-  background-color: #0080ff;
+  background: pink;
   display: inline-block;
   border-radius: 50%;
+  border: 1px solid grey;
   width: 15px;
   height: 15px;
+  margin: 5px;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -601,7 +640,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 p {
@@ -626,6 +665,12 @@ button {
   font-size: 1.4rem;
   font-weight: 600;
   margin-right: 5px;
+}
+
+.modal-content p,
+.form-2 label {
+  font-size: 1rem;
+  margin-bottom: 0.3125em;
 }
 
 .main-header {
@@ -830,30 +875,22 @@ footer {
   font-size: 1.625rem;
   margin: 0;
 }
-.modal-content input,
-.modal-content textarea {
-  padding: 0.9375em;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 0.3125em;
-  width: 100%;
-  background: #d9d9d9;
-}
-.modal-content textarea {
-  height: 200px;
-}
 .modal-colors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background: #d9d9d9;
   padding-top: 0.625em;
   padding-bottom: 0.625em;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .modal-colors {
+    flex-wrap: nowrap;
+  }
+}
 
-.modal-content h4,
-.form-2 label {
-  font-size: 1.3125rem;
-  margin-bottom: 0.3125em;
+.card {
   margin-top: 1.25em;
 }
 
@@ -877,6 +914,29 @@ footer {
   border-radius: 0 0.3125em 0.3125em 0;
   height: 3.1875em;
   width: 3.125em;
+}
+
+.form-2 input,
+.form-2 textarea {
+  padding: 0.9375em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.3125em;
+  width: 100%;
+  background: #d9d9d9;
+  margin-top: 0.3125em;
+}
+.form-2 textarea {
+  height: 200px;
+}
+.form-2 button {
+  padding: 0.9375em;
+  margin-top: 0.625em;
+  background: seagreen;
+  border-radius: 5px;
+  color: #fff;
+}
+.form-2 button:hover {
+  background: #44c17b;
 }
 
 #modalButton {

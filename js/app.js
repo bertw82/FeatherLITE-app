@@ -12,7 +12,7 @@ menu.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   overlayNav.style.height = '0%';
-  overlayNav.style.transition = "all .8s"
+  overlayNav.style.transition = "all .5s"
 });
 
 // open note modal

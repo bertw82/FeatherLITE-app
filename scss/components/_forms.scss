@@ -17,6 +17,30 @@
   }
 }
 
+.form-2 { 
+  input,
+  textarea {
+  @include input-style {
+    width: 100%;
+    background: $primary-light;
+    margin-top: ems(5);
+    }
+  }
+  textarea {
+    height: 200px;
+  }
+  button {
+    padding: ems(15);
+    margin-top: ems(10);
+    background: seagreen;
+    border-radius: 5px;
+    color: $white;
+    &:hover {
+      background: lighten(seagreen, 15%);
+    }
+  }
+}
+
 #modalButton {
   border: none;
   background-color: $background-color;

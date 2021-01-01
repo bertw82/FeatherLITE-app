@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  font-size: .8rem;
+  font-size: .9rem;
 
 }
 
@@ -44,3 +44,10 @@ button {
   font-weight: 600;
   margin-right: 5px;
 }
+
+.modal-content p,
+.form-2 label {
+  font-size: 1rem;
+  margin-bottom: ems(5);
+}
+

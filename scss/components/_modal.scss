@@ -19,32 +19,19 @@
       font-size: 1.625rem;
       margin: 0;
     }
-    input,
-    textarea {
-      @include input-style {
-        width: 100%;
-        background: $primary-light;
-      };
-    }
-    textarea {
-        height: 200px;
-    }
   }
   &-colors {
-    @include flexb($just: space-evenly);
+    @include flexb($just: space-evenly, $wrap: wrap);
     background: $primary-light;
     padding-top: ems(10);
     padding-bottom: ems(10);
     border-radius: 5px;
+    @include mq(med) {
+      flex-wrap: nowrap;
+    }
   }
 }
 
-.modal-content h4,
-.form-2 label {
- 
-    font-size: 1.3125rem;
-    margin-bottom: ems(5);
-    margin-top: ems(20);
-
+.card {
+  margin-top: ems(20);
 }
-
