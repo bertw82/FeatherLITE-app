@@ -39,7 +39,7 @@
 }
 
 .mod-2 {
-  background: seagreen;
+  background: darkcyan;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid grey;
@@ -109,16 +109,6 @@
 }
 
 .mod-9 {
-  background: firebrick;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid grey;
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-}
-
-.mod-10 {
   background: brown;
   display: inline-block;
   border-radius: 50%;
@@ -128,17 +118,7 @@
   margin: 5px;
 }
 
-.mod-11 {
-  background: black;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid grey;
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-}
-
-.mod-12 {
+.mod-10 {
   background: #fff;
   display: inline-block;
   border-radius: 50%;
@@ -148,8 +128,8 @@
   margin: 5px;
 }
 
-.mod-13 {
-  background: #000047;
+.mod-11 {
+  background: #000;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid grey;
@@ -158,7 +138,7 @@
   margin: 5px;
 }
 
-.mod-14 {
+.mod-12 {
   background: navy;
   display: inline-block;
   border-radius: 50%;
@@ -168,7 +148,7 @@
   margin: 5px;
 }
 
-.mod-15 {
+.mod-13 {
   background: blue;
   display: inline-block;
   border-radius: 50%;
@@ -178,8 +158,8 @@
   margin: 5px;
 }
 
-.mod-16 {
-  background: purple;
+.mod-14 {
+  background: dodgerblue;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid grey;
@@ -188,7 +168,7 @@
   margin: 5px;
 }
 
-.mod-17 {
+.mod-15 {
   background: magenta;
   display: inline-block;
   border-radius: 50%;
@@ -198,8 +178,28 @@
   margin: 5px;
 }
 
-.mod-18 {
+.mod-16 {
   background: pink;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+.mod-17 {
+  background: darkgrey;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+.mod-18 {
+  background: darkslategrey;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid grey;
@@ -937,15 +937,25 @@ footer {
     height: 200px;
   }
 }
-.form-2 button {
+
+.btn-cancel, .btn-post {
   padding: 0.9375em;
   margin-top: 0.625em;
-  background: seagreen;
   border-radius: 5px;
   color: #fff;
 }
-.form-2 button:hover {
-  background: #44c17b;
+.btn-cancel:hover, .btn-post:hover {
+  background: pink;
+}
+.btn-cancel:active, .btn-post:active {
+  background: red;
+}
+
+.btn-post {
+  background: seagreen;
+}
+.btn-cancel {
+  background: dodgerblue;
 }
 
 #modalButton {

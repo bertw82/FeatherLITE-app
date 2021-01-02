@@ -14,21 +14,21 @@ $overlay-bg-dark: darken($overlay-bg, 10%);
 // note colors
 $mod-colors: (
   'mod-1': turquoise,
-  'mod-2': seagreen,
+  'mod-2': darkcyan,
   'mod-3': green,
   'mod-4': greenyellow,
   'mod-5': yellow,
   'mod-6': khaki,
   'mod-7': orange,
   'mod-8': red,
-  'mod-9': firebrick,
-  'mod-10': brown,
-  'mod-11': black,
-  'mod-12': $white,
-  'mod-13': rgb(0, 0, 71),
-  'mod-14': navy,
-  'mod-15': blue,
-  'mod-16': purple,
-  'mod-17': magenta,
-  'mod-18': pink
+  'mod-9': brown,
+  'mod-10': $white,
+  'mod-11': $black,
+  'mod-12': navy,
+  'mod-13': blue,
+  'mod-14': dodgerblue,
+  'mod-15': magenta,
+  'mod-16': pink,
+  'mod-17': darkgrey,
+  'mod-18': darkslategrey
 );

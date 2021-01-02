@@ -5,9 +5,12 @@ const modalButton = document.getElementById('modalButton');
 const modal = document.querySelector('.modal');
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 
-// make radio buttons invisible
+// style radio buttons and make invisible
 for ( let i = 0; i < radioButtons.length; i++) {
   radioButtons[i].style.opacity = '0';
+  radioButtons[i].style.cursor = 'pointer';
+  radioButtons[i].style.width = '15px';
+  radioButtons[i].style.height = '15px';
 }
 
 // open and close the navigation on mobile devices
@@ -26,15 +29,9 @@ modalButton.addEventListener('click', () => {
   modal.classList.toggle('show');
 })
 
-// note label colors
-const modalColors = document.querySelector('.modal-colors');
-const colorClass = [
-  'mod-1', 'mod-2', 'mod-3', 'mod-4', 'mod-5', 'mod-6',
-  'mod-7', 'mod-8', 'mod-9', 'mod-10', 'mod-11', 'mod-12', 'mod-13', 
-  'mod-14', 'mod-15', 'mod-16', 'mod-17', 'mod-18'
-];
-
 // choose a label color 
+const modalColors = document.querySelector('.modal-colors');
+
 modalColors.addEventListener('click', () => {
   const col = document.getElementsByClassName('col');
   for (let i = 0; i < radioButtons.length; i++) {
@@ -44,7 +41,7 @@ modalColors.addEventListener('click', () => {
         radioButtons[i].parentNode.style.boxShadow = "none";
       }
     } 
-});
+})
 
 // use JS to get the current date
 const date = new Date();
@@ -52,7 +49,6 @@ const monthNames = [
   "January", "February", "March", "April", "May", "June", "July",
   "August", "September", "October", "November", "December"
 ];
-
 const month = monthNames[date.getMonth()];
 const day = date.getDate();
 const year = date.getFullYear();
@@ -60,13 +56,13 @@ const noteDate = `
   ${month} ${day}, ${year}
 `;
 
-// create note
+// create note targets
 const form = document.querySelector('.form-2');
 const title = document.querySelector('#title-input');
 const text = document.querySelector('#text-input');
 const newNote = document.getElementById('newNote');
 
-// function to post a note
+// function to create a note
 function createDiv() {
   const initialDiv = newNote.firstElementChild;
   const div = document.createElement('div');
@@ -90,14 +86,13 @@ function createDiv() {
   for (let i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
         radioValue = radioButtons[i].value;
-      } 
-  } 
+    } 
+  }
   span.className = radioValue;
 }
 
-// post a note or cancel
-const postButton = document.getElementById('postButton');
-const cancelButton = document.getElementById('cancelButton');
+// function to check if buttons checked 
+
 
 // function to uncheck buttons
 function uncheckButton() {
@@ -106,13 +101,37 @@ function uncheckButton() {
   } 
 }
 
+// target post note or cancel buttons
+const postButton = document.getElementById('postButton');
+const cancelButton = document.getElementById('cancelButton');
+
+function isChecked() {
+  for (let i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked === false) {
+      return false;
+    } else {
+      return true;
+    }
+  } 
+}
+
 // post note
 postButton.addEventListener('click', (e) => {
   e.preventDefault();
-  createDiv();
-  uncheckButton();
-  form.reset();
-  modal.classList.toggle('show');
+  let checked = isChecked();
+  console.log(checked);
+  if (title.value === "") {
+    alert('Please include a title for your note');
+  } else if (text.value === "") {
+    alert('Please include text content for your note');
+  } else if ( checked === false ) {
+    alert('Please choose color');
+  } else {
+    createDiv();
+    uncheckButton();
+    form.reset();
+    modal.classList.toggle('show');
+  }
 })
 
 // cancel button 

@@ -32,15 +32,29 @@
       height: 200px;
     }
   }
-  button {
-    padding: ems(15);
-    margin-top: ems(10);
+}
+
+%btn {
+  padding: ems(15);
+  margin-top: ems(10);
+  border-radius: 5px;
+  color: $white;
+  &:hover {
+    background: pink;
+  }
+  &:active {
+    background: red;
+  }
+}
+
+.btn {
+  &-post {
+    @extend %btn;
     background: seagreen;
-    border-radius: 5px;
-    color: $white;
-    &:hover {
-      background: lighten(seagreen, 15%);
-    }
+  }
+  &-cancel {
+    @extend %btn;
+    background: dodgerblue;
   }
 }
 
@@ -58,7 +72,3 @@ input:focus,
 textarea:focus {
   box-shadow: inset 0 0 5px $color-bg-opacity;
 }
-
-// input[type="radio"]:checked {
-//     box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
-//   }
