@@ -63,7 +63,7 @@
     </div>
 
     <!-- Create Note modal -->
-    <div class="modal">
+    <div class="modal show">
       <div class="modal-content">
         <h2>Create a Note</h2>
         <p>Choose a Label</p>
@@ -97,12 +97,16 @@
             <textarea id="text-input" name="text-input"></textarea>
           </div>
           <button id="postButton" type="submit">Post Note</button>
+          <button id="cancelButton" type="submit">Cancel</button>
         </form>
       </div>
     </div>
 
     <!-- notes -->
     <div class="diary">
+      <div id="newNote">
+        <!-- create new notes in JS -->
+      </div>
       <div>
         <section>
           <span class="date-1"></span>

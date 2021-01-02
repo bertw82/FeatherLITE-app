@@ -8,27 +8,21 @@ const modal = document.querySelector('.modal');
 menu.addEventListener('click', () => {
   overlayNav.style.height = '100%';
   overlayNav.style.transition = "all .8s";
-});
+})
 
 closeBtn.addEventListener('click', () => {
   overlayNav.style.height = '0%';
   overlayNav.style.transition = "all .5s";
-});
+})
 
 // open note modal
 modalButton.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
+  modal.classList.toggle('show');
+})
 
-// close note modal by clicking anywhere else on screen
-window.addEventListener('click', (e) => {
-  if (e.target == modal) {
-    modal.style.display = 'none';
-  }
-});
-
-// create note function
+// create note color
 const modalColors = document.querySelector('.modal-colors');
+const col = document.getElementsByClassName('col');
 const colorClass = [
   'mod-1', 'mod-2', 'mod-3', 'mod-4', 'mod-5', 'mod-6',
   'mod-7', 'mod-8', 'mod-9', 'mod-10', 'mod-11', 'mod-12', 'mod-13', 
@@ -36,22 +30,14 @@ const colorClass = [
 ];
 
 // choose a color and create part of the note
-modalColors.addEventListener('click', (e) => {
-  const col = document.getElementsByClassName('col');
-  diary.insertBefore(div, initialDiv);
-  div.appendChild(section);
-  div.style.display = 'none';
-  section.appendChild(span);
-  for (let i = 0; i < col.length; i++) {
-    if (e.target === col[i]) {
-      col[i].style.boxShadow = "0 0 5px 3px rgba(0,0,0,0.3)";
-      span.className = colorClass[i];
-    }
-  }
-});
-const form = document.querySelector('.form-2');
-const title = document.querySelector('#title-input');
-const text = document.querySelector('#text-input');
+// modalColors.addEventListener('click', (e) => {
+//   for (let i = 0; i < col.length; i++) {
+//     if (e.target === col[i]) {
+//       col[i].style.boxShadow = "0 0 5px 3px rgba(0,0,0,0.3)";
+//       span.className = colorClass[i];
+//     }
+//   }
+// });
 
 // use JS to get the current date
 const date = new Date();
@@ -66,7 +52,11 @@ const year = date.getFullYear();
 const noteDate = `
   ${month} ${day}, ${year}
 `;
-// build the rest of the note
+// create note
+const form = document.querySelector('.form-2');
+const title = document.querySelector('#title-input');
+const text = document.querySelector('#text-input');
+const newNote = document.getElementById('newNote');
 const diary = document.querySelector('.diary');
 const initialDiv = diary.firstElementChild;
 const div = document.createElement('div');
@@ -79,19 +69,32 @@ const p = document.createElement('p');
 
 // post the note for final product
 const postButton = document.getElementById('postButton');
+const cancelButton = document.getElementById('cancelButton');
 
-postButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  div.style.display = 'initial';
+function createDiv() {
+  newNote.appendChild(div);
+  div.appendChild(section);
+  section.appendChild(span);
   section.appendChild(h3);
-  div. appendChild(article);
+  div.appendChild(article);
   article.appendChild(h2);
   article.appendChild(p);
   h2.textContent = title.value;
   h3.textContent = noteDate;
   p.textContent = text.value;
+}
+
+postButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  createDiv();
   form.reset();
-  modal.style.display = 'none';
-});
+  modal.classList.toggle('show');
+})
+
+cancelButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.toggle('show');
+  form.reset();
+})
 
 

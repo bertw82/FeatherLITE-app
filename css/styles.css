@@ -849,7 +849,6 @@ footer {
 }
 
 .modal {
-  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -897,6 +896,10 @@ footer {
 
 .card {
   margin-top: 1.25em;
+}
+
+.show {
+  display: none;
 }
 
 .form-1 {
