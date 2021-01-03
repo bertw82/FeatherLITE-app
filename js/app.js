@@ -17,23 +17,22 @@ for ( let i = 0; i < radioButtons.length; i++) {
 menu.addEventListener('click', () => {
   overlayNav.style.height = '100%';
   overlayNav.style.transition = "all .8s";
-})
+});
 
 closeBtn.addEventListener('click', () => {
   overlayNav.style.height = '0%';
   overlayNav.style.transition = "all .5s";
-})
+});
 
 // open note modal
 modalButton.addEventListener('click', () => {
   modal.classList.toggle('show');
-})
+});
 
 // choose a label color 
 const modalColors = document.querySelector('.modal-colors');
 
 modalColors.addEventListener('click', () => {
-  const col = document.getElementsByClassName('col');
   for (let i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
         radioButtons[i].parentNode.style.boxShadow = "0 0 5px 5px rgba(0,0,0,0.3)";
@@ -41,7 +40,7 @@ modalColors.addEventListener('click', () => {
         radioButtons[i].parentNode.style.boxShadow = "none";
       }
     } 
-})
+});
 
 // use JS to get the current date
 const date = new Date();
@@ -120,14 +119,14 @@ postButton.addEventListener('click', (e) => {
   } else if (text.value === "") {
     alert('Please include text content for your note');
   } else if ( checked === false ) {
-    alert('Please choose color');
+    alert('Please choose color label');
   } else {
     createDiv();
     uncheckButton();
     form.reset();
     modal.classList.toggle('show');
   }
-})
+});
 
 // cancel button 
 cancelButton.addEventListener('click', (e) => {
@@ -135,6 +134,6 @@ cancelButton.addEventListener('click', (e) => {
   form.reset();
   uncheckButton();
   modal.classList.toggle('show');
-})
+});
 
 
