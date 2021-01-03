@@ -16,6 +16,9 @@ main {
   @include mq(med) {
     margin-top: 0;
   }
+  button {
+    background-color: $background-color;
+  }
 }
 
 .search-flex {

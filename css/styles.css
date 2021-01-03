@@ -767,6 +767,9 @@ main {
     margin-top: 0;
   }
 }
+.note-flex button {
+  background-color: whitesmoke;
+}
 
 @media (min-width: 768px) {
   .search-flex {
@@ -957,11 +960,6 @@ footer {
 }
 .btn-cancel {
   background: dodgerblue;
-}
-
-#modalButton {
-  border: none;
-  background-color: whitesmoke;
 }
 
 label[for=feather-search] {
