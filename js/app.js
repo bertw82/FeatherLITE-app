@@ -91,13 +91,11 @@ function createDiv() {
   span.className = radioValue;
 }
 
-// function to check if buttons checked 
-
-
 // function to uncheck buttons
 function uncheckButton() {
   for (let i = 0; i < radioButtons.length; i++) {
     radioButtons[i].parentNode.style.boxShadow = 'none';
+    radioButtons[i].checked = false;
   } 
 }
 
@@ -105,21 +103,18 @@ function uncheckButton() {
 const postButton = document.getElementById('postButton');
 const cancelButton = document.getElementById('cancelButton');
 
-function isChecked() {
-  for (let i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked === false) {
-      return false;
-    } else {
-      return true;
-    }
-  } 
-}
-
 // post note
 postButton.addEventListener('click', (e) => {
   e.preventDefault();
-  let checked = isChecked();
-  console.log(checked);
+  let checked = false;
+  for (let i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked) {
+      checked = true;
+      break;
+    } else if (!radioButtons[i].checked) {
+      checked = false;
+    }
+  } 
   if (title.value === "") {
     alert('Please include a title for your note');
   } else if (text.value === "") {
