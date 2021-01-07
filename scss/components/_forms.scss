@@ -34,6 +34,11 @@
   }
 }
 
+input:focus,
+textarea:focus {
+  box-shadow: inset 0 0 5px $color-bg-opacity;
+}
+
 %btn {
   padding: ems(15);
   margin-top: ems(10);
@@ -63,7 +68,4 @@ label[for="feather-search"] {
   padding-top: ems(5);
 }
 
-input:focus,
-textarea:focus {
-  box-shadow: inset 0 0 5px $color-bg-opacity;
-}
+

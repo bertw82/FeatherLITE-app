@@ -7,41 +7,39 @@
   left: 0;
   background-color: $color-bg-opacity;
   overflow-y: hidden;
-}
-
-.overlay-content {
-  width: 100%;
-  text-align: center;
-  background-color: $overlay-bg-dark;
-  padding: 10px;
-}
-
-.overlay a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  background: $overlay-bg;
-  color: $white;
-  padding: 15px 0;
-  margin: 10px;
-  &:last-child {
-    @include flexb($dir: row, $align:center, $just: center);
-    padding: 11px;
+  &-content {
+    width: 100%;
+    text-align: center;
+    background-color: $overlay-bg-dark;
+    padding: 10px;
   }
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background: $overlay-bg;
+    color: $white;
+    padding: 15px 0;
+    margin: 10px;
+    &:last-child {
+      @include flexb($dir: row, $align:center, $just: center);
+      padding: 11px;
+    }
+    &:hover, 
+    &:focus {
+      background-color: lighten($overlay-bg, 15%);
+    }
+  }
+  .closebtn {
+    font-size: 50px;
+    padding-top: 0;
+    padding-left: 10px;
+    margin: 0 0;
+    background-color: rgba(0,0,0,0);
+    line-height: .9;
+  }  
 }
 
-.overlay a:hover, .overlay a:focus {
-  background-color: lighten($overlay-bg, 15%);
-}
-
-.overlay .closebtn {
-  font-size: 50px;
-  padding-top: 0;
-  padding-left: 10px;
-  margin: 0 0;
-  background-color: rgba(0,0,0, 0);
-  line-height: .9;
-}
 

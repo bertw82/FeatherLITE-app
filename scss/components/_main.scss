@@ -13,6 +13,12 @@ main {
   margin-top: ems(20);
   padding: 10px 10px;
   cursor: pointer;
+  &:hover {
+   box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+  &:active {
+    box-shadow: none;
+  }
+  }
   @include mq(med) {
     margin-top: 0;
   }

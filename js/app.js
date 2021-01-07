@@ -110,9 +110,7 @@ postButton.addEventListener('click', (e) => {
     if (radioButtons[i].checked) {
       checked = true;
       break;
-    } else if (!radioButtons[i].checked) {
-      checked = false;
-    }
+    } 
   } 
   if (title.value === "") {
     alert('Please include a title for your note');
