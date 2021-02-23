@@ -52,6 +52,14 @@ main {
   }
 }
 
+.close {
+  cursor: pointer;
+  color: $primary-color;
+  font-size: 30px;
+  padding: 0 5px;
+  margin-left: auto;
+}
+
 footer {
   text-align: center;
 }

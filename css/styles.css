@@ -763,7 +763,7 @@ main {
   cursor: pointer;
 }
 .note-flex:hover {
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 .note-flex:hover:active {
   box-shadow: none;
@@ -802,6 +802,14 @@ main {
   border-radius: 0.3125em;
   margin-bottom: 2em;
   padding: 0.3125em 1.5625em;
+}
+
+.close {
+  cursor: pointer;
+  color: grey;
+  font-size: 30px;
+  padding: 0 5px;
+  margin-left: auto;
 }
 
 footer {
@@ -884,15 +892,14 @@ footer {
 .modal-colors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   background: #d9d9d9;
-  padding-top: 0.625em;
-  padding-bottom: 0.625em;
+  padding: 0.625em;
   border-radius: 5px;
 }
 @media (min-width: 768px) {
   .modal-colors {
     flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -901,6 +908,10 @@ footer {
 }
 
 .show {
+  display: none;
+}
+
+.hide {
   display: none;
 }
 
@@ -922,8 +933,9 @@ footer {
 .form-1 button {
   background-color: grey;
   border-radius: 0 0.3125em 0.3125em 0;
-  height: 3.1875em;
-  width: 3.125em;
+  width: 50px;
+  color: #fff;
+  font-size: 25px;
 }
 
 .form-2 input,

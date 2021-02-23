@@ -12,8 +12,9 @@
   button {
     background-color: $primary-color;
     border-radius: 0 ems(5) ems(5) 0;
-    height: ems(51);
-    width: ems(50);
+    width: 50px;
+    color: $white;
+    font-size: 25px;
   }
 }
 

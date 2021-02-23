@@ -23,13 +23,13 @@
     }
   }
   &-colors {
-    @include flexb($just: space-evenly, $wrap: wrap);
+    @include flexb($wrap: wrap);
     background: $primary-light;
-    padding-top: ems(10);
-    padding-bottom: ems(10);
+    padding: ems(10);
     border-radius: 5px;
     @include mq(med) {
       flex-wrap: nowrap;
+      justify-content: space-evenly;
     }
   }
 }
@@ -39,5 +39,9 @@
 }
 
 .show {
+  display: none;
+}
+
+.hide {
   display: none;
 }

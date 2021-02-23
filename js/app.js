@@ -4,6 +4,7 @@ const closeBtn = document.querySelector('.closebtn');
 const modalButton = document.getElementById('modalButton');
 const modal = document.querySelector('.modal');
 const radioButtons = document.querySelectorAll('input[type="radio"]');
+const diary = document.querySelector('.diary');
 
 // style radio buttons and make invisible
 for ( let i = 0; i < radioButtons.length; i++) {
@@ -67,6 +68,7 @@ function createDiv() {
   const div = document.createElement('div');
   const section = document.createElement('section');
   const span = document.createElement('span');
+  const closeSpan = document.createElement('span');
   const article = document.createElement('article');
   const h2 = document.createElement('h2');
   const h3 = document.createElement('h3');
@@ -75,11 +77,14 @@ function createDiv() {
   div.appendChild(section);
   section.appendChild(span);
   section.appendChild(h3);
+  section.appendChild(closeSpan);
   div.appendChild(article);
   article.appendChild(h2);
   article.appendChild(p);
   h2.textContent = title.value;
   h3.textContent = noteDate;
+  closeSpan.innerHTML = '&times;';
+  closeSpan.className = 'close';
   p.textContent = text.value;
   let radioValue = '';
   for (let i = 0; i < radioButtons.length; i++) {
@@ -132,6 +137,16 @@ cancelButton.addEventListener('click', (e) => {
   form.reset();
   uncheckButton();
   modal.classList.toggle('show');
+});
+
+// close note when close button pressed
+diary.addEventListener('click', e => {
+  const close = document.getElementsByClassName('close');
+  for (let i = 0; i < close.length; i++) {
+    if (e.target === close[i]) {
+      close[i].parentNode.parentNode.classList.add('hide');
+    }
+  }
 });
 
 
